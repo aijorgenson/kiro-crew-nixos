@@ -1,4 +1,4 @@
-# kiro-crew
+# kiro-crew for NixOS
 
 > [Kiro Crew](https://kiro.dev/docs/crew/) desktop on NixOS, wrapping the
 > official Linux AppImage. A GitHub Action bumps the pin when a new stable
@@ -16,7 +16,7 @@ takes the AppImage and wraps it in an FHS environment. The current pin is in
 ## Try it without installing
 
 ```sh
-nix run github:aijorgenson/kiro-crew
+nix run github:aijorgenson/kiro-crew-nixos
 ```
 
 `nix run` starts the desktop app. The app opens its own window and starts the
@@ -35,7 +35,7 @@ package puts `kiro-cli` on `PATH` as well.
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     kiro-crew = {
-      url = "github:aijorgenson/kiro-crew";
+      url = "github:aijorgenson/kiro-crew-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -51,18 +51,6 @@ package puts `kiro-cli` on `PATH` as well.
   };
 }
 ```
-
-### Or just the package
-
-```nix
-{ pkgs, kiro-crew, ... }:
-{
-  environment.systemPackages = [ kiro-crew.packages.${pkgs.system}.default ];
-}
-```
-
-(Pass `kiro-crew` through `specialArgs` if the module file is not the flake's
-`outputs`.)
 
 Kiro CLI is published under the AWS Intellectual Property License, so the
 package is unfree. This flake allows that one package for `nix build` and
