@@ -1,13 +1,13 @@
 {
-  "version": "0.7.2",
+  "version": "0.8.0",
   "sources": {
     "x86_64-linux": {
-      "url": "https://download.crew.kiro.dev/desktop/stable/0.7.2/KiroCrew-x86_64.AppImage",
-      "hash": "sha256-ODgPqBYEBMLIvNCTl3saQU5rJnhyTtL7O7cWREPfawI="
+      "url": "https://download.crew.kiro.dev/desktop/stable/0.8.0/KiroCrew-x86_64.AppImage",
+      "hash": "sha256-ukAAHz+jENA0t/q2U/Ta0D9Xxjvkq7qItLdNamBW2j4="
     },
     "aarch64-linux": {
-      "url": "https://download.crew.kiro.dev/desktop/stable/0.7.2/KiroCrew-aarch64.AppImage",
-      "hash": "sha256-MY61VMZNyYEijbgNoPVjHD3xHvWznnBKyEjSLiXxL4E="
+      "url": "https://download.crew.kiro.dev/desktop/stable/0.8.0/KiroCrew-aarch64.AppImage",
+      "hash": "sha256-aQlkbBx7emw9WRQndUOmGV7f8NVT8N0zfal90Krfjbs="
     }
   },
   "kiroCli": {
