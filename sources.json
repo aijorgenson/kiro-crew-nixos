@@ -1,25 +1,25 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "sources": {
     "x86_64-linux": {
-      "url": "https://download.crew.kiro.dev/desktop/stable/0.8.0/KiroCrew-x86_64.AppImage",
-      "hash": "sha256-ukAAHz+jENA0t/q2U/Ta0D9Xxjvkq7qItLdNamBW2j4="
+      "url": "https://download.crew.kiro.dev/desktop/stable/0.9.0/KiroCrew-x86_64.AppImage",
+      "hash": "sha256-eO08920mu+ZLBlEeC58CYj3O/uap3ye/ICCm+bKlak0="
     },
     "aarch64-linux": {
-      "url": "https://download.crew.kiro.dev/desktop/stable/0.8.0/KiroCrew-aarch64.AppImage",
-      "hash": "sha256-aQlkbBx7emw9WRQndUOmGV7f8NVT8N0zfal90Krfjbs="
+      "url": "https://download.crew.kiro.dev/desktop/stable/0.9.0/KiroCrew-aarch64.AppImage",
+      "hash": "sha256-4/hE3bTgyPHHgIR2ToDzO+Ljvkbf1RA2y70A2QD0UQY="
     }
   },
   "kiroCli": {
-    "version": "2.31.1",
+    "version": "2.32.0",
     "sources": {
       "x86_64-linux": {
-        "url": "https://prod.download.cli.kiro.dev/stable/2.31.1/kirocli-x86_64-linux.zip",
-        "hash": "sha256-R5crkzgl1c8fCyGMNoY4Yt8R8S2rLIZPBBBR9MraWL4="
+        "url": "https://prod.download.cli.kiro.dev/stable/2.32.0/kirocli-x86_64-linux.zip",
+        "hash": "sha256-fOoskBmO3GDMrung2cneJpArOCT1SmaqNjmjZfckL7s="
       },
       "aarch64-linux": {
-        "url": "https://prod.download.cli.kiro.dev/stable/2.31.1/kirocli-aarch64-linux.zip",
-        "hash": "sha256-TWvr0D2GsJRhVuioEEy5iLRMWsSK5qp98rHSCqweziI="
+        "url": "https://prod.download.cli.kiro.dev/stable/2.32.0/kirocli-aarch64-linux.zip",
+        "hash": "sha256-9m+qo/ogLncwl54QrZB8Q/gyIFd2Ccl/3/uwf8jvGEg="
       }
     }
   }
