@@ -67,8 +67,11 @@ appimageTools.wrapType2 {
     # Same binaries, on the host PATH, so `kiro-cli login` works from a
     # normal shell once the desktop package is installed.
     ln -s ${kiro-cli}/bin/kiro-cli $out/bin/kiro-cli
-    ln -s ${kiro-cli}/bin/kiro-cli-chat $out/bin/kiro-cli-chat
-    ln -s ${kiro-cli}/bin/kiro-cli-term $out/bin/kiro-cli-term
+    for extra in kiro-cli-chat kiro-cli-term; do
+      if [ -e ${kiro-cli}/bin/$extra ]; then
+        ln -s ${kiro-cli}/bin/$extra $out/bin/$extra
+      fi
+    done
   '';
 
   meta = {
