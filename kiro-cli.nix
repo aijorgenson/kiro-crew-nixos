@@ -39,10 +39,14 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
     mkdir -p $out/bin
-    # q and qchat in the zip are shell wrappers hardcoded to ~/.local/bin.
-    # Crew looks up the name kiro-cli, and that binary calls the other two
-    # next to it.
-    install -m755 bin/kiro-cli bin/kiro-cli-chat bin/kiro-cli-term $out/bin
+    # Since 3.x the zip ships a single kiro-cli binary. 2.x also shipped
+    # kiro-cli-chat and kiro-cli-term next to it; install those if present.
+    install -m755 bin/kiro-cli $out/bin
+    for extra in kiro-cli-chat kiro-cli-term; do
+      if [ -e "bin/$extra" ]; then
+        install -m755 "bin/$extra" $out/bin
+      fi
+    done
     runHook postInstall
   '';
 
