@@ -11,15 +11,15 @@
     }
   },
   "kiroCli": {
-    "version": "3.5.0",
+    "version": "3.6.0",
     "sources": {
       "x86_64-linux": {
-        "url": "https://prod.download.cli.kiro.dev/stable/3.5.0/kirocli-x86_64-linux.zip",
-        "hash": "sha256-f5u3aSH0dxJWKWGUUNWULhYJQqup3YzcSmb3Z4ogxW0="
+        "url": "https://prod.download.cli.kiro.dev/stable/3.6.0/kirocli-x86_64-linux.zip",
+        "hash": "sha256-pQYqi08HD8FTv4VeNFuCt9tvUTbxQTJdveudxZ8vv+E="
       },
       "aarch64-linux": {
-        "url": "https://prod.download.cli.kiro.dev/stable/3.5.0/kirocli-aarch64-linux.zip",
-        "hash": "sha256-7UXzh7ypNW0ednAip8tQTD+9og04gcVcfXcYdzNc7sA="
+        "url": "https://prod.download.cli.kiro.dev/stable/3.6.0/kirocli-aarch64-linux.zip",
+        "hash": "sha256-2po1qbcQNKNUwOR5woRUGafWs5vhpUgyBbimEjdWYko="
       }
     }
   }
